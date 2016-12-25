@@ -1,8 +1,19 @@
 <html>
 <head>
   <title>yeah ok</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<script>
+function getRandomInt(max) {
+  max = Math.floor(max);
+  return Math.floor(Math.random() * max);
+}
+
+var num_images = 8;
+var image_picked = getRandomInt(num_images) + 1;
+
+document.body.style.background = "url(images/" + image_picked + ".jpg) no-repeat center center fixed";
+document.body.style.backgroundSize = "cover";
+</script>
 </body>
 </html>
